@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Principal
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=cond1\ cond2
+comment2.target=int\ m1(boolean,\ boolean)
+comment3.params=cond1\ cond2
+comment3.target=int\ m2(boolean,\ boolean)
+numComments=4
