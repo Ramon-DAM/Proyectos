@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Intervalo
+comment1.params=
+comment1.target=Intervalo()
+comment2.params=x\ a\ b
+comment2.target=boolean\ enCerrado(int,\ int,\ int)
+comment3.params=a\ b\ c\ d
+comment3.target=boolean\ solapamiento(int,\ int,\ int,\ int)
+numComments=4

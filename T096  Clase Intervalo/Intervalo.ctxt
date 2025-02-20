@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Intervalo
+comment1.params=a\ b
+comment1.target=Intervalo(int,\ int)
+comment2.params=x
+comment2.target=boolean\ en(int)
+comment3.params=otro
+comment3.target=boolean\ solapamiento(Intervalo)
+comment4.params=a\ b
+comment4.target=void\ setAB(int,\ int)
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6
