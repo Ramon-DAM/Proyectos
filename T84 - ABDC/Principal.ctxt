@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Principal
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=c
+comment2.target=int\ mostrar1(char)
+comment3.params=c
+comment3.target=boolean\ mostrar2(char)
+numComments=4
