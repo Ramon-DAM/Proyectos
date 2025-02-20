@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Salida
+comment1.params=
+comment1.target=Salida()
+comment2.params=mensaje
+comment2.target=void\ mensaje(java.lang.String)
+comment3.params=mensaje
+comment3.target=void\ mensajeln(java.lang.String)
+comment4.params=mensaje
+comment4.target=void\ error(java.lang.String)
+comment5.params=mensaje
+comment5.target=void\ log(java.lang.String)
+numComments=6
