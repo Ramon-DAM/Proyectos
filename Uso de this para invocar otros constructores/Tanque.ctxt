@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Tanque
+comment1.params=
+comment1.target=Tanque()
+comment2.params=fila\ columna\ direccion
+comment2.target=Tanque(int,\ int,\ char)
+comment3.params=fila\ columna
+comment3.target=Tanque(int,\ int)
+comment4.params=direccion
+comment4.target=Tanque(char)
+numComments=5

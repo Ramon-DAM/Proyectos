@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Robot
+comment1.params=
+comment1.target=Robot()
+comment2.params=apodo
+comment2.target=Robot(java.lang.String)
+comment3.params=apodo\ peso
+comment3.target=Robot(java.lang.String,\ int)
+comment4.params=numero
+comment4.target=void\ setNumero(int)
+comment5.params=
+comment5.target=java.lang.String\ getApodo()
+comment6.params=apodo
+comment6.target=void\ setApodo(java.lang.String)
+comment7.params=peso
+comment7.target=void\ setPeso(int)
+comment8.params=
+comment8.target=java.lang.String\ toString()
+numComments=9
