@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Bola
+comment1.params=color
+comment1.target=Bola(Color)
+comment2.params=
+comment2.target=Bola\ generar()
+comment3.params=
+comment3.target=Color\ getColor()
+comment4.params=
+comment4.target=int\ getNumero()
+comment5.params=numero
+comment5.target=void\ setNumero(int)
+comment6.params=color
+comment6.target=void\ setColor(Color)
+comment7.params=
+comment7.target=int\ totalBolas()
+comment8.params=
+comment8.target=java.lang.String\ toString()
+numComments=9

@@ -1,0 +1,115 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>9</zoom_level><element><id>UMLClass</id><coordinates><x>72</x><y>0</y><w>90</w><h>36</h></coordinates><panel_attributes>valign=center
+bg=#2E9AFE
+Principal</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>234</x><y>0</y><w>90</w><h>36</h></coordinates><panel_attributes>valign=center
+bg=#2E9AFE
+Urna</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>234</x><y>126</y><w>90</w><h>36</h></coordinates><panel_attributes>valign=center
+bg=#2E9AFE
+Bola</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>153</x><y>0</y><w>99</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;crea&gt;&gt;</panel_attributes><additional_attributes>90;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>135</x><y>27</y><w>117</w><h>135</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;crea&gt;&gt;</panel_attributes><additional_attributes>110;130;10;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>27</y><w>81</w><h>117</h></coordinates><panel_attributes>lt=&lt;-
+contiene v
+m1=0..3
+m2=0..1</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>234</x><y>216</y><w>144</w><h>315</h></coordinates><panel_attributes>style=autoresize
+valign=center
+bg=#2E9AFE
+Urna
+-
+_-CAPACIDAD: int = 3_
+-b1: Bola &lt;&lt;R&gt;&gt;
+-b2: Bola &lt;&lt;R&gt;&gt;
+-b3: Bola &lt;&lt;R&gt;&gt;
+-
++Urna()
+&lt;&lt;accesores&gt;&gt;
+-getBola(n:int): Bola
++getCapacidad(): int
+&lt;&lt;otros metodos&gt;&gt;
++agregar()
++agregar(bola: Bola)
++agregar(color: Color)
++estaLlena(): boolean
++estaVacia(): boolean
++llenar()
++numBolas(): int
++sacar(): Bola
++sacar(color: Color): Bola
++vaciar()
++toString(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>99</x><y>216</y><w>117</w><h>54</h></coordinates><panel_attributes>style=autoresize
+bg=#2E9AFE
+Principal
+-
+-
+_+main(args:String[])_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>405</x><y>558</y><w>252</w><h>63</h></coordinates><panel_attributes>style=autoresize
+bg=#F3F781
+sacar()
+No es posible sacar una bola de una urna vacia.
+En ese caso el programa termina con error.</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>369</x><y>450</y><w>54</w><h>126</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;40;120</additional_attributes></element><element><id>UMLNote</id><coordinates><x>405</x><y>468</y><w>261</w><h>63</h></coordinates><panel_attributes>style=autoresize
+bg=#F3F781
+agregar(), agregar(bola), agregar(color)
+No es posible agregar una bola a una urna llena.
+En ese caso el programa termina con error.</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>369</x><y>423</y><w>54</w><h>99</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;40;90</additional_attributes></element><element><id>UMLNote</id><coordinates><x>405</x><y>648</y><w>252</w><h>99</h></coordinates><panel_attributes>style=autoresize
+bg=#F3F781
+sacar(color)
+No es posible sacar una bola de una urna vacia.
+En ese caso el programa termina con error.
+
+Si no existe una bola del color deseado
+devuelve null</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>369</x><y>522</y><w>54</w><h>144</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;40;140</additional_attributes></element><element><id>UMLNote</id><coordinates><x>63</x><y>675</y><w>324</w><h>72</h></coordinates><panel_attributes>style=autoresize
+bg=#F3F781
+llenar()
+Agrega bolas de color aleatorio a la urna hasta que este llena.
+
+Usa el metodo generar de la clase Bola.</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>288</x><y>522</y><w>63</w><h>171</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>50;10;10;170</additional_attributes></element><element><id>UMLClass</id><coordinates><x>405</x><y>216</y><w>144</w><h>234</h></coordinates><panel_attributes>style=autoresize
+bg=#2E9AFE
+Bola
+-
+_-contador: int = 0_
+-numero: int
+-color: Color
+-
++Bola(color: Color)
+_+generar(): Bola_
+&lt;&lt;accesores&gt;&gt;
++getColor(): Color
++getNumero(): int
+&lt;&lt;mutadores&gt;&gt;
+-setColor(color: Color)
+-setNumero(numero: int)
+&lt;&lt;otros metodos&gt;&gt;
+_+totalBolas(): int_
++toString(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>567</x><y>9</y><w>234</w><h>45</h></coordinates><panel_attributes>style=autoresize
+bg=#F3F781
+generar()
+Crea y devuelve una bola de color aleatorio</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>513</x><y>45</y><w>72</w><h>189</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>60;10;10;190</additional_attributes></element><element><id>UMLNote</id><coordinates><x>567</x><y>135</y><w>108</w><h>63</h></coordinates><panel_attributes>style=autoresize
+bg=#F3F781
+color
+NO MODIFICABLE
+NO NULO</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>531</x><y>99</y><w>54</w><h>135</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>40;10;10;130</additional_attributes></element><element><id>UMLNote</id><coordinates><x>567</x><y>369</y><w>81</w><h>63</h></coordinates><panel_attributes>style=autoresize
+bg=#F3F781
+toString()
+"%d %s"
+numero, color</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>369</y><w>45</w><h>27</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;30;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>63</x><y>567</y><w>207</w><h>99</h></coordinates><panel_attributes>style=autoresize
+bg=#F3F781
+toString()
+"|%s|%s|%s| Capacidad=%d %s"
+b1, b2, b3, numBolas()/getCapacidad()
+(estaVacia() ? "VACIA" : "") + 
+(estaLlena() ? "LLENA" : "")
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>144</x><y>522</y><w>108</w><h>63</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>100;10;10;50</additional_attributes></element><element><id>UMLNote</id><coordinates><x>567</x><y>81</y><w>171</w><h>45</h></coordinates><panel_attributes>style=autoresize
+bg=#F3F781
+numero
+{&gt;=1, AUTO, NO MODIFICABLE}</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>144</y><w>45</w><h>99</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>30;10;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>378</x><y>126</y><w>90</w><h>36</h></coordinates><panel_attributes>valign=center
+bg=cyan
+&lt;&lt;enum&gt;&gt;
+Color</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>315</x><y>126</y><w>81</w><h>36</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;usa&gt;&gt;</panel_attributes><additional_attributes>70;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>315</x><y>9</y><w>153</w><h>135</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;usa&gt;&gt;</panel_attributes><additional_attributes>120;130;120;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>99</x><y>27</y><w>342</w><h>171</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;usa&gt;&gt;</panel_attributes><additional_attributes>360;150;360;170;10;170;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>567</x><y>216</y><w>72</w><h>108</h></coordinates><panel_attributes>style=autoresize
+bg=cyan
+&lt;&lt;enum&gt;&gt;
+Color
+-
++AMARILLO
++AZUL
++ROJO
++VERDE</panel_attributes><additional_attributes></additional_attributes></element></diagram>
